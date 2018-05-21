@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { Input } from 'antd';
+import '../less/footer.less';
 
 class Footer extends Component {
 	render() {
 		return (
-			<footer>页脚{this.props.userId}</footer>
+			<footer className="footer">
+				<div className="title">页脚</div>
+				<Input placeholder="Basic usage" />
+				<div>{this.props.userId}</div>
+			</footer>
 		);
 	}
 }
